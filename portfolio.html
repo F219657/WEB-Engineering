@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eman Javaid Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Eman Javaid's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#movies">My Favorite Movies</a></li>
+                <li><a href="#digital-library">Digital Library</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <img src="image.png" alt="Eman Javaid's Picture" style="width:200px;height:200px;border-radius:50%;">
+        <p>Hi! I'm Eman Javaid, a passionate student exploring the world of technology and software development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Programming in C++, Java, Python</li>
+        </ul>
+    </section>
+
+    
+    <section id="movies">
+        <h2>My Favorite Movies</h2>
+        <p>Here are some of my all-time favorites:</p>
+        <ul>
+            <!-- Mission Impossible -->
+            <li>
+                <h3>Mission Impossible</h3>
+                <img src="mission impossible.jpeg" alt="Mission Impossible" style="width:200px;height:200px;border-radius:50%;">
+                <div>
+                    <h4>Trailer:</h4>
+                    <!-- Correct Embed Link -->
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/avz06PDqDbM" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </li>
+        
+            <!-- Lucy -->
+            <li>
+                <h3>Lucy</h3>
+                <img src="lucy.jpg" alt="Lucy" style="width:200px;height:200px;border-radius:50%;">
+                <div>
+                    <h4>Trailer:</h4>
+                    <!-- Correct Embed Link -->
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/deMHi69NA1Q" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+        <h2>My Digital Library</h2>
+        <p>Here are some of my favorite songs:</p>
+        <ul>
+            <li onclick="alert('Playing: Imagine by John Lennon')">Imagine - John Lennon</li>
+            <li onclick="alert('Playing: Bohemian Rhapsody by Queen')">Bohemian Rhapsody - Queen</li>
+            <li onclick="alert('Playing: Stairway to Heaven by Led Zeppelin')">Stairway to Heaven - Led Zeppelin</li>
+        </ul>
+    </section>
+
+    <section id="music">
+        <h2>My Favorite Music</h2>
+        <p>Here are some tracks I enjoy:</p>
+        <ul>
+            <li><audio controls>
+                <source src="ashique2-bansuri-2821.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> Song Title 1</li>
+            <li><audio controls>
+                <source src="iphone-ringtone-47958.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> Song Title 2</li>
+            <li><audio controls>
+                <source src="vivo-y12-2020-ringtone-50494.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> Song Title 3</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Eman Javaid. All rights reserved.</p>
+    </footer>
+</body>
+</html>
