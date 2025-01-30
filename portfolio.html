@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eman Javaid Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+<script src="portfolio.js"></script>
 </head>
 <body>
     <header>
@@ -24,7 +25,10 @@
     <section id="about-me">
         <h2>About Me</h2>
         <img src="image.png" alt="Eman Javaid's Picture" style="width:200px;height:200px;border-radius:50%;">
-        <p>Hi! I'm Eman Javaid, a passionate student exploring the world of technology and software development.</p>
+        <p>I am Eman, a **Software Engineering** student passionate about **AI-driven solutions and web development**. Currently working on **"TailorGen"**, an AI-based tailoring platform.  
+            
+            With expertise in **JavaScript, React, Python, and AI/ML**, I build scalable, user-centric applications. I thrive on solving real-world problems through technology and innovation.  
+             </p>
     </section>
 
     <section id="skills">
@@ -46,8 +50,8 @@
                 <div>
                     <h4>Trailer:</h4>
                     <!-- Correct Embed Link -->
-                    <iframe width="560" height="315" 
-                            src="https://www.youtube.com/embed/avz06PDqDbM" 
+                    <iframe width="560" height="315" autoplay muted loop
+                            src="https://www.youtube.com/embed/avz06PDqDbM?autoplay=1&mute=1&loop=1" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
@@ -63,7 +67,7 @@
                     <h4>Trailer:</h4>
                     <!-- Correct Embed Link -->
                     <iframe width="560" height="315" 
-                            src="https://www.youtube.com/embed/deMHi69NA1Q" 
+                            src="https://www.youtube.com/embed/deMHi69NA1Q?autoplay=1&mute=1&loop=1" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
@@ -73,33 +77,34 @@
         </ul>
     </section>
     
+    <section class="library-box">
         <h2>My Digital Library</h2>
-        <p>Here are some of my favorite songs:</p>
-        <ul>
-            <li onclick="alert('Playing: Imagine by John Lennon')">Imagine - John Lennon</li>
-            <li onclick="alert('Playing: Bohemian Rhapsody by Queen')">Bohemian Rhapsody - Queen</li>
-            <li onclick="alert('Playing: Stairway to Heaven by Led Zeppelin')">Stairway to Heaven - Led Zeppelin</li>
+        <p>Click on a song to play:</p>
+        <ul id="digital-library">
+            <li class="song" data-song="iphone-ringtone-47958.mp3">Iphone-ringtone</li>
+            <li class="song" data-song="ashique2-bansuri-2821.mp3.mp3">Ashique-2</li>
+            <li class="song" data-song="vivo-y12-2020-ringtone-50494.mp3.mp3">Vivo-ringtone</li>
         </ul>
     </section>
+    
 
     <section id="music">
         <h2>My Favorite Music</h2>
-        <p>Here are some tracks I enjoy:</p>
-        <ul>
-            <li><audio controls>
-                <source src="ashique2-bansuri-2821.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio> Song Title 1</li>
-            <li><audio controls>
-                <source src="iphone-ringtone-47958.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio> Song Title 2</li>
-            <li><audio controls>
-                <source src="vivo-y12-2020-ringtone-50494.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio> Song Title 3</li>
+        <ul id="playlist">
+            <li>
+                <audio controls id="audio-player">
+                    <source src="iphone-ringtone-47958.mp3" type="audio/mpeg">
+                    <source src="ashique2-bansuri-2821.mp3" type="audio/mpeg">
+                    <source src="vivo-y12-2020-ringtone-50494.mp3" type="audio/mpeg">
+                </audio>
+                <button id="prev-btn">&#9665; Prev</button>
+                <button id="next-btn">Next &#9655;</button>
+                <button id="add-btn">Add Song</button>
+                <button id="delete-btn">Delete Song</button>
+            </li>
         </ul>
     </section>
+    
 
     <section id="contact">
         <h2>Contact Me</h2>
